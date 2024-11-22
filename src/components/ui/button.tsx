@@ -14,8 +14,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none"
     
     const variants = {
-      default: "bg-primary-600 text-white hover:bg-primary-700",
-      outline: "border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white",
+      default: "bg-orange-600 text-white hover:bg-orange-700",
+      outline: "border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white",
       ghost: "text-gray-300 hover:text-white hover:bg-white/10"
     }
     
@@ -26,6 +26,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     }
 
     return (
+      // @ts-ignore
       <motion.button
         ref={ref}
         whileHover={{ scale: 1.02 }}
