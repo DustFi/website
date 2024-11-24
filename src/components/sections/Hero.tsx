@@ -117,15 +117,15 @@ export const Hero = () => {
             </motion.div>
 
             {/* Floating Hand Image */}
-            <div className="absolute -bottom-20 right-0 w-72 h-72 opacity-80">
+            {/* <div className="absolute -bottom-20 right-0 w-72 h-72 opacity-80">
               <Image
-                src="/hand-mockup.png" // Make sure to add this image to your public folder
+                src="/phone-bg.jpg" // Make sure to add this image to your public folder
                 alt="Trading Interface"
                 width={400}
                 height={400}
                 className="object-contain"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

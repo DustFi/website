@@ -4,7 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CgProfile } from "react-icons/cg";
-import { FaTelegram, FaTwitter } from 'react-icons/fa' // Add this import at the top
+import { FaTelegram, FaTwitter } from 'react-icons/fa';
+import { AiOutlineSearch } from "react-icons/ai";
+import Image from "next/image";
 
 const Navbar = () => {
 	const router = useRouter();
@@ -14,8 +16,9 @@ const Navbar = () => {
 		<nav className="bg-dark-900/95 fixed w-full z-50 px-4 py-3">
 			<div className="max-w-7xl mx-auto flex items-center justify-between">
 				{/* Logo */}
-
 				<Link href="/" className="flex items-center space-x-2">
+					<Image src="/dustfi.png" width={40} height={40} alt="DustFi Logo" />
+
 					<span className="text-2xl font-bold text-black">DustFi</span>
 				</Link>
 
